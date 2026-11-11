@@ -1,0 +1,54 @@
+body{
+  font-family: sans-serif;
+    background-color: rgb(243, 236, 236);
+    }
+   
+li{
+  padding: 6px;
+}
+
+  h1{
+      background-color: rgba(164, 82, 6, 0.604);
+      
+   }
+
+  h2{
+      color: rgb(230, 41, 7);
+      font-size: 20pt;
+      font-weight: bold;
+   }
+       
+  h3{
+      color: rgb(185, 154, 214);
+      font-size: 12pt;
+      font-weight: bold;
+   }
+
+  nav{
+      background-color: rgb(185, 154, 214);
+      font-size: 12pt;
+      font-weight: bold;
+   }
+
+   table,thead,tr,td,th{
+    border:2px solid rgb(31, 41, 231);
+   }
+   /* Container que junta os três blocos e os coloca lado a lado */
+.galeria-destaques {
+    display: flex;
+    gap: 120px;          /* Espaço de 20px entre cada bloco de imagem */
+    flex-wrap: wrap;    /* Se não couber em ecrãs pequenos (telemóveis), passa para baixo */
+}
+
+/* Estilo para cada conjunto de Imagem + Legenda */
+.galeria-destaques figure {
+    margin: 0;          /* Remove as margens padrão do navegador */
+    text-align: center; /* Centraliza a legenda exatamente abaixo da imagem */
+    max-width: 200px;   /* Garante que o texto não ultrapasse a largura da imagem */
+}
+
+/* Estilo opcional para a legenda (itálico) */
+.galeria-destaques figcaption {
+    font-style: italic;
+    margin-top: 8px;    /* Pequeno espaço entre a imagem e o texto */
+}
