@@ -95,15 +95,18 @@ Respondam às seguintes questões por palavras vossas:
 
 1. A importância da Meta Viewport:
    Para que serve a tag `<meta name="viewport" content="width=device-width, initial-scale=1.0">` e o que acontece quando abrimos um site sem esta tag num telemóvel?
-   Resposta: [Preencher]
+   R: 
+      a. A tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> serve para adaptar a página ao tamanho do ecrã dos dispositivos, principalmente telemóveis e tablets.
+      b. Se estiver sem essa tag a pagina pode desformatar quando aberto em dispositivos de tela de tamanho diferente.
 
 2. SEO e Meta Description:
    Onde aparece o conteúdo da tag `<meta name="description">` num motor de busca como o Google e quais são duas boas práticas essenciais na sua redação?
-   Resposta: [Preencher]
+   R:
+     a.Escrever uma descrição clara e apelativa, que explique o conteúdo da página e colocar palavras chaves importantes.
 
 3. Validação no Cliente vs no Servidor:
    Porque é que a validação nativa de HTML5 no navegador é excelente para a experiência do utilizador, mas nunca dispensa a validação adicional no servidor?
-   Resposta: [Preencher]
+   R: A validação nativa do HTML5 é excelente porque ajuda o utilizador a identificar e corrigir erros rapidamente, antes de enviar o formulário, porém o  servidor precisa de verificar os dados para garantir a segurança e evitar informações incorretas.
 
 ---
 

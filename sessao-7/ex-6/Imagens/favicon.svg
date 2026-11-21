@@ -1,0 +1,22 @@
+<svg width="400" height="200" viewBox="-100 -100 400 200" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- 1. CIDADE (Silhueta de prédios usando linhas retas horizontais e verticais) -->
+  <path d="M -90 80 
+           L -90 20 L -70 20 L -70 40 L -60 40 L -60 10 L -40 10 L -40 50 L -30 50 L -30 30 L -10 30 L -10 80 Z" 
+        fill="#2c3e50" />
+
+  <!-- 2. ESTRELA (Desenhada cruzando os pontos e fechada com 'Z' no topo) -->
+  <path d="M 40 -60 
+           L 47 -45 L 63 -43 L 51 -31 L 54 -15 L 40 -23 L 26 -15 L 29 -31 L 17 -43 L 33 -45 Z" 
+        fill="#f1c40f" />
+
+  <!-- 3. PATRIMÔNIO (Um monumento/igreja antiga com cúpula e cruz no topo) -->
+  <path d="M 150 80 L 150 40 L 160 40 L 160 20 A 15 15 0 0 1 190 20 L 190 40 L 200 40 L 200 80 Z 
+           M 175 20 L 175 5 M 170 10 L 180 10" 
+        fill="#7f8c8d" stroke="#7f8c8d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- 4. PERCURSO (Linha pontilhada que sai da cidade e vai até o patrimônio) -->
+  <path d="M -10 70 Q 40 100 90 50 T 150 60" 
+        fill="none" stroke="#e67e22" stroke-width="3" stroke-dasharray="6,6" stroke-linecap="round" />
+
+</svg>
