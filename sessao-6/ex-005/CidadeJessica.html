@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cidade de Jéssica</title>
+</head>
+<body>
+
+  <!-- Cabeçalho com título e menu -->
+  <header>
+    <h1>Mindelo — Minha Cidade</h1>
+    <img
+      src="imagem/images.jpg"
+      alt="Vista da cidade do Mindelo e da sua baía"
+      width="240"
+      height="160"
+    />
+    <nav>
+      <ul>
+        <li><a href="#onde-fica">Onde fica</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#visitar">O que visitar</a></li>
+        <li><a href="#monumentos">Monumentos</a></li>
+        <li><a href="#ditado">Ditado</a></li>
+        <li><a href="#sugestoes">Sugestões</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+ <!-- Sessao 1: Historia -->
+    <section id="historia">
+      <h2>História</h2>
+      <p>Bem-vindo à minha cidade! A ilha foi descoberta no dia de São Vicente
+        (22 de janeiro) de 1462, pelo navegador português Diogo Gomes, escudeiro
+        do infante D. Fernando.</p>
+      <p>No tempo dos ingleses, a ilha tinha um velho hábito:
+        <span lang="en">five o'clock tea</span>.</p>
+    </section>
+
+<!-- Sessao 3: onde fica -->
+    <section id="onde-fica">
+      <h2>Onde fica</h2>
+      <p>Mindelo é a única cidade de <abbr title="São Vicente">SV</abbr>, situada no
+        arquipélago de Cabo Verde, entre as ilhas de Santo Antão e Santa Luzia.</p>
+      <p>Mais informações no
+        <a href="https://cmsv.cv" target="_blank" rel="noreferrer noopener">site da
+        Câmara Municipal de São Vicente</a>.</p>
+    </section>
+
+<!-- Sessao 3: que e conhecida   -->
+    <section id="conhecida">
+      <h2>Pelo que é conhecida</h2>
+      <p>Conhecida como a ilha moldada pelo Atlântico, com 227 km² de paisagens
+        áridas e montanhosas, São Vicente é uma ilha de contrastes: o interior seco
+        e ondulado encontra o brilho das praias de areia clara e águas tépidas,
+        como Laginha, Salamansa e Baía das Gatas.</p>
+    </section>
+
+<!-- Sessao  4: O que visitar -->
+    <section id="visitar">
+      <h2>O que podemos visitar?</h2>
+      <ul>
+        <li><strong>Monte Verde</strong> — ponto mais alto da ilha, com vistas amplas
+          sobre São Vicente e as ilhas vizinhas.</li>
+        <li><strong>Calhau</strong> — zona de paisagens lunares e projetos de
+          conservação de tartarugas.</li>
+        <li><strong>Ilhéu dos Pássaros</strong> — área natural protegida.</li>
+      </ul>
+    </section>
+
+<!-- Sessao 5: Principais monumentos -->
+    <section id="monumentos">
+      <h2>Principais monumentos</h2>
+      <table>
+        <caption>Monumentos históricos do Mindelo</caption>
+        <thead>
+          <tr>
+            <th scope="col">Monumento</th>
+            <th scope="col">Construção/Século</th>
+            <th scope="col">Estilo</th>
+            <th scope="col">Classificação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Palácio do Povo</td>
+            <td>1874 (séc. XIX)</td>
+            <td>Neoclássico</td>
+            <td>Monumento histórico</td>
+          </tr>
+          <tr>
+            <td>Paços do Concelho</td>
+            <td>1860–1873 (séc. XIX)</td>
+            <td>Colonial</td>
+            <td>Por confirmar</td>
+          </tr>
+          <tr>
+            <td>Torre de Belém (réplica)</td>
+            <td>1918–1937 (séc. XX)</td>
+            <td>Neomanuelino</td>
+            <td>Por confirmar</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+<!-- Sessao 6: Ditado -->
+    <section id="ditado">
+      <h2>Um ditado sobre a minha terra</h2>
+      <article>
+        <blockquote lang="kea">
+          <p>Bô ka podê subi monton ku djâb</p>
+        </blockquote>
+        <p>Ditado popular que significa: “Não podes subir montanha com pressa”.</p>
+      </article>
+    </section>
+
+<!-- Sessao 7: Sugestoes -->
+    <section id="sugestoes">
+      <h2>Partilhe uma sugestão sobre a cidade</h2>
+      <p>Conhece um lugar especial no Mindelo que ainda não está nesta página?
+        Envie-nos a sua sugestão de um novo ponto de interesse!</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>A sua identificação</legend>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome">
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+          <legend>Detalhes da recomendação</legend>
+
+          <label for="categoria">Categoria:</label>
+          <select id="categoria" name="categoria">
+            <option value="monumento">Monumento</option>
+            <option value="natureza">Miradouro/Natureza</option>
+            <option value="gastronomia">Restaurante/Gastronomia</option>
+            <option value="museu">Museu</option>
+          </select>
+
+          <p>É morador ou turista?</p>
+          <input type="radio" id="morador" name="tipo" value="morador">
+          <label for="morador">Morador local</label>
+
+          <input type="radio" id="turista" name="tipo" value="turista">
+          <label for="turista">Turista</label>
+
+          <label for="descricao">Descreva o local sugerido:</label>
+          <textarea id="descricao" name="descricao" rows="5" cols="40"></textarea>
+
+          <input type="checkbox" id="autorizo" name="autorizo">
+          <label for="autorizo">Autorizo a publicação da minha sugestão</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </section>
+  </main>
+
+<!-- Rodape -->
+  <footer>
+    <p>&copy; 2026 Jéssica dos Santos</p>
+  </footer>
+
+</body>
+</html>

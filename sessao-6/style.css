@@ -1,0 +1,28 @@
+body{
+  font-family: sans-serif;
+    background-color: rgb(243, 236, 236);
+    }
+   
+
+  h1{
+      background-color: #15616d;
+      
+   }
+
+  h2{
+      color: blueviolet;
+      font-size: 20pt;
+      font-weight: bold;
+   }
+       
+  h3{
+      color: rgb(185, 154, 214);
+      font-size: 12pt;
+      font-weight: bold;
+   }
+
+  nav{
+      background-color: rgb(185, 154, 214);
+      font-size: 12pt;
+      font-weight: bold;
+   }
