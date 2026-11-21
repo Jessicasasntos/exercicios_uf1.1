@@ -1,0 +1,165 @@
+/*
+   PALETA dos elétricos amarelos)
+   - Amarelo elétrico:   #facc15
+   - Quase preto:        #1c1917
+   - Texto secundário:   #57534e  (cinzento)
+   - Bordas:             #d6d3d1  (cinzento claro)
+   - Avisos:             #dc2626  (vermelho)
+   */
+
+/* BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #1c1917;
+  background-color: #fafaf9;
+}
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* TEXTO E FONTES */
+h1, h2, h3 {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: #1c1917;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 40px 0 16px;
+  border-left: 6px solid #facc15;
+  padding-left: 12px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #57534e;
+  margin: 0 0 16px;
+}
+
+.introducao {
+  font-size: 1.1rem;
+  color: #57534e;
+  margin: 24px 0;
+}
+
+/*  CABEÇALHO E MENU */
+header {
+  background-color: #facc15;
+  padding: 24px 16px;
+  border-bottom: 8px solid #1c1917;
+  text-align: center;
+}
+
+header img {
+  background-color: #ffffff;
+  padding: 8px;
+  border: 3px solid #1c1917;
+  border-radius: 12px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 4px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #1c1917;
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+/* TABELA E RODAPÉ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #d6d3d1;
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #1c1917;
+  color: #facc15;
+}
+
+footer {
+  background-color: #1c1917;
+  color: #ffffff;
+  padding: 16px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer a {
+  color: #facc15;
+}
+
+/*  CLASSES */
+.cartao {
+  background-color: #ffffff;
+  border: 1px solid #d6d3d1;
+  border-top: 6px solid #facc15;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.numero-linha {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #facc15;
+  border: 2px solid #1c1917;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.curiosidade {
+  background-color: rgb(254, 249, 195);
+  border-left: 5px solid #facc15;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.aviso {
+  background-color: hsl(0, 86%, 96%);
+  border: 2px dashed #dc2626;
+  padding: 12px 16px;
+  border-radius: 6px;
+}

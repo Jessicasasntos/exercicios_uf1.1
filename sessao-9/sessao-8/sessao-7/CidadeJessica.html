@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Metadados fundamentais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Descubra Mindelo, a encantadora cidade de São Vicente, em Cabo Verde, conhecida pelo seu festial, suas praias, cultura, música e belas paisagens." />
+
+    <meta name="author" content="Jéssica dos Santos" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
+    <link rel="stylesheet" href="Style.css" />
+
+    <title>Cidade de Jéssica</title>
+</head>
+
+<body>
+
+    <!-- O meu Header -->
+    <header>
+        <h1>Mindelo - Minha Cidade</h1>
+
+        <img 
+            src="imagens/sv.jpg"
+            alt="Mindelo Linda Cidade!"
+            width="400"
+            height="200"
+        />
+    </header>
+
+    <br>
+
+    <main>
+
+        <!-- Cidade onde Nasci -->
+        <section>
+            <h2>Bem-vindo à minha cidade!</h2>
+
+            <p>
+                Descoberta no dia de São Vicente (22 de Janeiro) de 1462,
+                pelo navegador português Diogo Gomes, escudeiro do infante D. Fernando.
+            </p>
+        </section>
+
+        <!-- Onde fica situada a cidade onde nasci -->
+        <section>
+            <h2>Onde fica</h2>
+
+            <p>
+                Mindelo é a única cidade de São Vicente, situada no arquipélago
+                de Cabo Verde, entre as ilhas de Santo Antão e Santa Luzia,
+                localizada no grupo do Barlavento, a noroeste do arquipélago.
+            </p>
+        </section>
+
+        <!-- Pelo que é conhecida a cidade onde nasci -->
+        <section>
+            <h2>Pelo que é conhecida</h2>
+
+            <p>
+                Conhecida como a ilha moldada pelo Atlântico,
+                com 227 km² de paisagens áridas e montanhosas.
+                São Vicente é uma ilha de contrastes:
+                o interior seco e ondulado encontra o brilho das
+                praias de areia clara e águas tépidas, como
+                Laginha, Salamansa e Baía das Gatas.
+            </p>
+        </section>
+
+        <!-- O que podemos visitar na cidade onde nasci -->
+        <section>
+            <h2>O que podemos visitar?</h2>
+
+            <p>
+                1 - <strong><em>Monte Verde</em></strong> — ponto mais alto da ilha,
+                com vistas amplas sobre São Vicente
+                e ilhas vizinhas.
+                <br>
+
+                2 - <strong><em>Calhau</em></strong> — zona de paisagens lunares
+                e projetos de conservação de tartarugas.
+                <br>
+
+                3 - <strong><em>Ilhéu dos Pássaros</em></strong> — área natural protegida.
+            </p>
+        </section>
+
+        <!-- Sugestões de visitantes -->
+        <section id="sugestoes">
+
+            <h2>Deixe a sua sugestão!</h2>
+
+            <p>
+                Conhece algum lugar interessante em Mindelo?
+                Partilhe a sua recomendação connosco.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- Nome do visitante -->
+                <label for="nome">Nome do visitante:</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Introduza o seu nome"
+                    required
+                    minlength="3"
+                    maxlength="60"
+                />
+
+                <br><br>
+
+                <!-- Correio eletrónico -->
+                <label for="email">Correio eletrónico:</label>
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required
+                />
+
+                <br><br>
+
+                <!-- Classificacao do local -->
+                <label for="classificacao">Classificação do local:</label>
+                <br>
+
+                <select
+                    id="Classificacao"
+                    name="Classificacao"
+                    required
+                >
+                    <option value="">Selecione a Classificação </option>
+                    <option value="praia">Praia</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="monumento">Monumento</option>
+                    <option value="natureza">Natureza</option>
+                    <option value="cultura">Cultura</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br><br>
+
+                <!-- Descrição da recomendação -->
+                <label for="descricao">
+                    Descrição da recomendação:
+                </label>
+                <br>
+
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    rows="5"
+                    cols="40"
+                    placeholder="Descreva o local recomendado..."
+                    required
+                    minlength="20"
+                    maxlength="800"
+                ></textarea>
+
+                <br><br>
+
+                <!-- Autorização -->
+                <input
+                    type="checkbox"
+                    id="autorizacao"
+                    name="autorizacao"
+                    required
+                />
+
+                <label for="autorizacao">
+                    Autorizo a utilização da minha sugestão.
+                </label>
+
+                <br><br>
+
+                <!-- Botão de envio -->
+                <button type="submit">
+                    Enviar sugestão
+                </button>
+
+                <button type="reset">
+                    Limpar formulário
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+<hr>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Cidade de Jéssica | Mindelo, São Vicente Cabo Verde</p>
+    </footer>
+
+</body>
+</html>

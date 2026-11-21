@@ -1,0 +1,238 @@
+/*  Estilos Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #334155;
+  line-height: 1.6;
+  margin: 40px 40px 40px 40px;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*  Cabeçalho e Navegaçao */
+header {
+  background: linear-gradient(135deg, #0f172a 0%, #a4aec9 100%);
+  color: #ffffff;
+  padding: 3rem 0;
+  border-bottom: 4px solid #d97706;
+  text-align: justify;
+}
+
+header img {
+  margin-left: 33%;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.15rem;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #0f172a;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d97706;
+}
+
+/* Tipografia e Sessoes  */
+main {
+  padding: 2.5rem 0;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  border-top: 3px solid #a4aec9;
+}
+
+h2 {
+  color: #0f172a;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Indicador laranja antes dos títulos H2 */
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #d97706;
+  border-radius: 50%;
+}
+
+h3 {
+  color: #a4aec9;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #a4aec9;
+  text-decoration: underline;
+  text-decoration-color: #d97706;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #dc2626;
+}
+
+/*  Cartoes de Farois   */
+.grid-farois {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card-farol {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-farol:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.15);
+  border-color: #d97706;
+}
+
+.card-farol-conteudo {
+  padding: 1.25rem;
+}
+
+.tag-regiao {
+  display: inline-block;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid #dc2626;
+}
+
+/* Tabelas responsivo */
+.tabela-responsiva {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: #0c245a;
+  color: #ffffff;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  border: 3px solid #d97706;
+}
+
+td {
+  padding: 0.85rem 1rem;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+/*  Botoes e Destaques  */
+.btn-nautico {
+  display: inline-block;
+  background-color: #dc2626;
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-nautico:hover {
+  background-color: #991b1b;
+  color: #ffffff;
+}
+
+.destaque-curiosidade {
+  background-color: #fef3c7;
+  border-left: 4px solid #d97706;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+  color: #0f172a;
+}
+
+/*  Rodape */
+footer {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 4px solid #dc2626;
+  font-size: 0.9rem;
+}
+
